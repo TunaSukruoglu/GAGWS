@@ -1,0 +1,22 @@
+[
+    {"name": "İstanbul", "code": "34"},
+    {"name": "Ankara", "code": "06"},
+    {"name": "İzmir", "code": "35"},
+    {"name": "Bursa", "code": "16"},
+    {"name": "Antalya", "code": "07"},
+    {"name": "Adana", "code": "01"},
+    {"name": "Konya", "code": "42"},
+    {"name": "Gaziantep", "code": "27"},
+    {"name": "Mersin", "code": "33"},
+    {"name": "Kayseri", "code": "38"},
+    {"name": "Eskişehir", "code": "26"},
+    {"name": "Diyarbakır", "code": "21"},
+    {"name": "Samsun", "code": "55"},
+    {"name": "Denizli", "code": "20"},
+    {"name": "Şanlıurfa", "code": "63"},
+    {"name": "Adapazarı", "code": "54"},
+    {"name": "Malatya", "code": "44"},
+    {"name": "Erzurum", "code": "25"},
+    {"name": "Van", "code": "65"},
+    {"name": "Batman", "code": "72"}
+]

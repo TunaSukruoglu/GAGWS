@@ -1,0 +1,121 @@
+/* Advanced Dashboard Styles - Dışarıdan Yüklenir */
+
+/* Gelişmiş Animasyonlar */
+@keyframes slideInUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeInScale {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes shimmer {
+    0% { background-position: -468px 0; }
+    100% { background-position: 468px 0; }
+}
+
+/* Gelişmiş Card Stiller */
+.card {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    animation: slideInUp 0.6s ease-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.card.loading {
+    background: linear-gradient(90deg, #f0f0f0 25%, transparent 37%, #f0f0f0 63%);
+    background-size: 400% 100%;
+    animation: shimmer 1.5s ease-in-out infinite;
+}
+
+/* Gelişmiş Grid */
+.stats {
+    animation: fadeInScale 0.8s ease-out 0.2s both;
+}
+
+/* Gradient Backgrounds */
+.card:nth-child(1) { border-left: 4px solid #667eea; }
+.card:nth-child(2) { border-left: 4px solid #764ba2; }
+.card:nth-child(3) { border-left: 4px solid #f093fb; }
+.card:nth-child(4) { border-left: 4px solid #4facfe; }
+
+/* Hero Improvements */
+.hero {
+    background-attachment: fixed;
+    background-size: 400% 400%;
+    animation: gradientShift 8s ease infinite;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .stats {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 10px;
+    }
+    
+    .hero {
+        padding: 15px;
+    }
+    
+    .speed-badge {
+        position: static;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    body { background: #1a1a1a; color: #fff; }
+    .card { background: #2d2d2d; color: #fff; }
+    .card.loading { 
+        background: linear-gradient(90deg, #2d2d2d 25%, transparent 37%, #2d2d2d 63%);
+    }
+}
+
+/* Print Styles */
+@media print {
+    .hero { background: #667eea !important; }
+    .card { box-shadow: none; border: 1px solid #ccc; }
+    .speed-badge { display: none; }
+}
+
+/* Accessibility */
+.card:focus {
+    outline: 2px solid #667eea;
+    outline-offset: 2px;
+}
+
+/* Performance Optimizations */
+.card * {
+    will-change: transform;
+}
+
+.hero * {
+    backface-visibility: hidden;
+}
+
+/* Chart Container */
+.chart-container {
+    position: relative;
+    height: 300px;
+    margin-top: 20px;
+}
+
+.chart-container canvas {
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}

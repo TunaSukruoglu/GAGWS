@@ -1,0 +1,76 @@
+/* Fast Dashboard Styles - Dışarıdan Yüklenir */
+
+/* Animasyonlar */
+.stat-card {
+    animation: slideInUp 0.6s ease-out;
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Hover Efektleri */
+.stat-card:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+.stat-card div:first-child {
+    transition: all 0.3s ease;
+}
+
+.stat-card:hover div:first-child {
+    transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .stat-card {
+        margin-bottom: 15px;
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #1a1a1a;
+        color: #fff;
+    }
+    
+    .stat-card div:first-of-type {
+        background: #2d2d2d !important;
+        color: #fff !important;
+    }
+}
+
+/* Loading States */
+.loading-shimmer {
+    background: linear-gradient(90deg, #f0f0f0 25%, transparent 37%, #f0f0f0 63%);
+    background-size: 400% 100%;
+    animation: shimmer 1.5s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -468px 0;
+    }
+    100% {
+        background-position: 468px 0;
+    }
+}
+
+/* Performance Optimizations */
+* {
+    will-change: auto;
+}
+
+.stat-card {
+    contain: layout style paint;
+}

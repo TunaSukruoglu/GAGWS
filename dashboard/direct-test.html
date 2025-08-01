@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Direct Property Form Test</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .category-card, .transaction-card, .subcategory-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px 0;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .category-card:hover, .transaction-card:hover, .subcategory-card:hover {
+            background-color: #f8f9fa;
+            border-color: #007bff;
+        }
+        .category-card.selected, .transaction-card.selected, .subcategory-card.selected {
+            background-color: #007bff;
+            color: white;
+            border-color: #007bff;
+        }
+        .step-content { display: none; }
+        .step-content.active { display: block; }
+    </style>
+</head>
+<body class="container mt-5">
+
+<h2>Property Form - Direct Test</h2>
+
+<!-- Step 1: Category Selection -->
+<div id="step1" class="step-content active">
+    <h4>1. Kategori Seçin</h4>
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <div class="category-card" data-category="konut">
+                <i class="fas fa-home fa-2x mb-2"></i>
+                <h5>Konut</h5>
+                <p>Ev, daire, villa gibi konut türleri</p>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <div class="category-card" data-category="is_yeri">
+                <i class="fas fa-building fa-2x mb-2"></i>
+                <h5>İş Yeri</h5>
+                <p>Dükkan, ofis, işyeri gibi ticari alanlar</p>
+            </div>
+        </div>
+    </div>
+    <button type="button" class="btn btn-primary" id="nextStep1" disabled>İleri</button>
+</div>
+
+<!-- Step 2: Transaction Type Selection -->
+<div id="step2" class="step-content">
+    <h4>2. İşlem Türü Seçin</h4>
+    <div class="row" id="transactionOptions">
+        <!-- Will be populated by JavaScript -->
+    </div>
+    <button type="button" class="btn btn-secondary me-2" onclick="showStep(1)">Geri</button>
+    <button type="button" class="btn btn-primary" id="nextStep2" disabled>İleri</button>
+</div>
+
+<!-- Step 3: Subcategory Selection -->
+<div id="step3" class="step-content">
+    <h4>3. Alt Kategori Seçin</h4>
+    <div class="row" id="subcategoryOptions">
+        <!-- Will be populated by JavaScript -->
+    </div>
+    <button type="button" class="btn btn-secondary me-2" onclick="showStep(2)">Geri</button>
+    <button type="button" class="btn btn-success" id="completeSelection">Tamamla</button>
+</div>
+
+<script>
+// Test the subcategory system directly
+
+let selectedCategory = '';
+let selectedTransaction = '';
+let selectedSubcategory = '';
+
+// Subcategory definitions
+const subcategoryTypes = {
+    'konut': {
+        'satilik': {
+            'daire': 'Daire',
+            'villa': 'Villa',
+            'mustakilev': 'Müstakil Ev',
+            'ciftlikevi': 'Çiftlik Evi',
+            'kosk': 'Köşk',
+            'yali': 'Yalı',
+            'prefabrikev': 'Prefabrik Ev',
+            'residence': 'Residence',
+            'apart': 'Apart'
+        },
+        'kiralik': {
+            'daire': 'Daire',
+            'villa': 'Villa',
+            'mustakilev': 'Müstakil Ev',
+            'apart': 'Apart',
+            'residence': 'Residence',
+            'koy_evi': 'Köy Evi'
+        },
+        'gunluk_kiralik': {
+            'daire': 'Daire',
+            'villa': 'Villa',
+            'apart': 'Apart',
+            'residence': 'Residence',
+            'bungalov': 'Bungalov'
+        }
+    },
+    'is_yeri': {
+        'satilik': {
+            'dukkan_magaza': 'Dükkan & Mağaza',
+            'buro_ofis': 'Büro & Ofis',
+            'plaza': 'Plaza',
+            'is_merkezi': 'İş Merkezi',
+            'ticaret_merkezi': 'Ticaret Merkezi',
+            'fabrika': 'Fabrika',
+            'imalathane': 'İmalathane',
+            'atölye': 'Atölye',
+            'depo_antrepo': 'Depo & Antrepo',
+            'düğün_salonu': 'Düğün Salonu',
+            'spor_tesisi': 'Spor Tesisi'
+        },
+        'kiralik': {
+            'dukkan_magaza': 'Dükkan & Mağaza',
+            'buro_ofis': 'Büro & Ofis',
+            'plaza': 'Plaza',
+            'is_merkezi': 'İş Merkezi',
+            'showroom': 'Showroom',
+            'atölye': 'Atölye',
+            'depo_antrepo': 'Depo & Antrepo',
+            'fabrika': 'Fabrika',
+            'düğün_salonu': 'Düğün Salonu',
+            'spor_tesisi': 'Spor Tesisi'
+        }
+    }
+};
+
+function showStep(stepNumber) {
+    document.querySelectorAll('.step-content').forEach(step => step.classList.remove('active'));
+    document.getElementById('step' + stepNumber).classList.add('active');
+}
+
+function setupCategorySelection() {
+    console.log('Setting up category selection...');
+    
+    const categoryCards = document.querySelectorAll('.category-card');
+    const nextBtn = document.getElementById('nextStep1');
+    
+    console.log('Found', categoryCards.length, 'category cards');
+    
+    categoryCards.forEach(card => {
+        card.addEventListener('click', function() {
+            console.log('Category card clicked:', this.dataset.category);
+            
+            // Remove selected from all cards
+            categoryCards.forEach(c => c.classList.remove('selected'));
+            
+            // Add selected to clicked card
+            this.classList.add('selected');
+            
+            selectedCategory = this.dataset.category;
+            console.log('Selected category:', selectedCategory);
+            
+            // Enable next button
+            nextBtn.disabled = false;
+        });
+    });
+    
+    nextBtn.addEventListener('click', function() {
+        console.log('Next step 1 clicked, showing transaction options');
+        populateTransactionOptions();
+        showStep(2);
+    });
+}
+
+function populateTransactionOptions() {
+    const container = document.getElementById('transactionOptions');
+    const transactions = selectedCategory === 'konut' 
+        ? [
+            {key: 'satilik', name: 'Satılık', icon: 'fas fa-tag'},
+            {key: 'kiralik', name: 'Kiralık', icon: 'fas fa-key'},
+            {key: 'gunluk_kiralik', name: 'Günlük Kiralık', icon: 'fas fa-calendar-day'}
+        ]
+        : [
+            {key: 'satilik', name: 'Satılık', icon: 'fas fa-tag'},
+            {key: 'kiralik', name: 'Kiralık', icon: 'fas fa-key'}
+        ];
+    
+    container.innerHTML = '';
+    
+    transactions.forEach(transaction => {
+        container.innerHTML += `
+            <div class="col-md-6 mb-3">
+                <div class="transaction-card" data-transaction="${transaction.key}">
+                    <i class="${transaction.icon} fa-2x mb-2"></i>
+                    <h5>${transaction.name}</h5>
+                </div>
+            </div>
+        `;
+    });
+    
+    setupTransactionSelection();
+}
+
+function setupTransactionSelection() {
+    console.log('Setting up transaction selection...');
+    
+    const transactionCards = document.querySelectorAll('.transaction-card');
+    const nextBtn = document.getElementById('nextStep2');
+    
+    transactionCards.forEach(card => {
+        card.addEventListener('click', function() {
+            console.log('Transaction card clicked:', this.dataset.transaction);
+            
+            transactionCards.forEach(c => c.classList.remove('selected'));
+            this.classList.add('selected');
+            
+            selectedTransaction = this.dataset.transaction;
+            console.log('Selected transaction:', selectedTransaction);
+            
+            nextBtn.disabled = false;
+        });
+    });
+    
+    nextBtn.addEventListener('click', function() {
+        console.log('Next step 2 clicked, showing subcategory options');
+        populateSubcategoryOptions();
+        showStep(3);
+    });
+}
+
+function populateSubcategoryOptions() {
+    const container = document.getElementById('subcategoryOptions');
+    const subcategories = subcategoryTypes[selectedCategory]?.[selectedTransaction] || {};
+    
+    container.innerHTML = '';
+    
+    Object.entries(subcategories).forEach(([key, name]) => {
+        container.innerHTML += `
+            <div class="col-md-6 col-lg-4 mb-3">
+                <div class="subcategory-card" data-subcategory="${key}">
+                    <h6>${name}</h6>
+                </div>
+            </div>
+        `;
+    });
+    
+    setupSubcategorySelection();
+}
+
+function setupSubcategorySelection() {
+    console.log('Setting up subcategory selection...');
+    
+    const subcategoryCards = document.querySelectorAll('.subcategory-card');
+    const completeBtn = document.getElementById('completeSelection');
+    
+    subcategoryCards.forEach(card => {
+        card.addEventListener('click', function() {
+            console.log('Subcategory card clicked:', this.dataset.subcategory);
+            
+            subcategoryCards.forEach(c => c.classList.remove('selected'));
+            this.classList.add('selected');
+            
+            selectedSubcategory = this.dataset.subcategory;
+            console.log('Selected subcategory:', selectedSubcategory);
+            
+            completeBtn.disabled = false;
+        });
+    });
+    
+    completeBtn.addEventListener('click', function() {
+        alert(`Seçim Tamamlandı!\n\nKategori: ${selectedCategory}\nİşlem: ${selectedTransaction}\nAlt Kategori: ${selectedSubcategory}`);
+    });
+}
+
+// Initialize
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('Direct test initialized');
+    setupCategorySelection();
+});
+
+</script>
+
+</body>
+</html>

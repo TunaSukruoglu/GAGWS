@@ -1,0 +1,64 @@
+/* Nice-select dropdown z-index düzeltmesi sadece bu sayfa için */
+.nice-select {
+    position: relative;
+    z-index: 100;
+}
+.nice-select.open {
+    z-index: 1000;
+}
+.nice-select .list {
+    z-index: 1001;
+    position: absolute;
+    background: white;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+.price-input::before {
+    content: "₺";
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+    color: var(--secondary-color);
+    z-index: 5;
+    font-size: 16px;
+    pointer-events: none;
+}
+.dash-input-wrapper {
+    position: relative;
+    z-index: auto;
+}
+.nice-select.open ~ .price-input::before,
+.nice-select.open + * .price-input::before {
+    z-index: 1;
+}
+.row .col-md-6:has(.nice-select.open) {
+    z-index: 1000;
+    position: relative;
+}
+.nice-select .option {
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.nice-select .option:hover {
+    background-color: rgba(21, 185, 124, 0.1);
+    color: var(--secondary-color);
+}
+.nice-select .option.selected {
+    background-color: var(--secondary-color);
+    color: white;
+}
+@media (max-width: 768px) {
+    .nice-select {
+        z-index: 1500;
+    }
+    .nice-select.open {
+        z-index: 2000;
+    }
+    .nice-select .list {
+        z-index: 2001;
+    }
+}

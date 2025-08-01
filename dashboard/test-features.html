@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Özellikler Test</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0">
+                            <i class="fas fa-plus me-2"></i>
+                            Özellikler Ekleme Testi
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <form method="POST" action="add-property.php">
+                            <input type="hidden" name="csrf_token" value="test">
+                            
+                            <!-- Test verileri -->
+                            <input type="hidden" name="title" value="Test İlan">
+                            <input type="hidden" name="description" value="Test açıklama">
+                            <input type="hidden" name="type" value="sale">
+                            <input type="hidden" name="category" value="apartment">
+                            <input type="hidden" name="price" value="1000000">
+                            <input type="hidden" name="city" value="İstanbul">
+                            <input type="hidden" name="district" value="Beylikdüzü">
+                            <input type="hidden" name="room_count" value="3+1">
+                            <input type="hidden" name="building_age" value="5">
+                            <input type="hidden" name="floor_location" value="3">
+                            <input type="hidden" name="heating" value="Kombi (Doğalgaz)">
+                            <input type="hidden" name="bathroom_count" value="2">
+                            <input type="hidden" name="elevator" value="Var">
+                            <input type="hidden" name="parking" value="Kapalı Otopark">
+                            <input type="hidden" name="usage_status" value="Boş">
+                            <input type="hidden" name="deed_status" value="Kat Mülkiyetli">
+                            <input type="hidden" name="exchange" value="Hayır">
+                            <input type="hidden" name="location_type" value="site">
+                            <input type="hidden" name="site_name" value="Test Sitesi">
+                            
+                            <h6 class="text-primary mb-3">Özellikler Test</h6>
+                            
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6>İç Özellikler</h6>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="Klima" id="test_klima" name="ic_ozellikler[]" checked>
+                                        <label class="form-check-label" for="test_klima">Klima</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="Buzdolabı" id="test_buzdolabi" name="ic_ozellikler[]" checked>
+                                        <label class="form-check-label" for="test_buzdolabi">Buzdolabı</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6>Dış Özellikler</h6>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="Balkon" id="test_balkon" name="dis_ozellikler[]" checked>
+                                        <label class="form-check-label" for="test_balkon">Balkon</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="Teras" id="test_teras" name="dis_ozellikler[]">
+                                        <label class="form-check-label" for="test_teras">Teras</label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row mt-3">
+                                <div class="col-md-6">
+                                    <h6>Muhit Özellikleri</h6>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="Okul" id="test_okul" name="muhit_ozellikleri[]" checked>
+                                        <label class="form-check-label" for="test_okul">Okul</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6>Olanaklar</h6>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="Güvenlik" id="test_guvenlik" name="olanaklar[]" checked>
+                                        <label class="form-check-label" for="test_guvenlik">Güvenlik</label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-4">
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="fas fa-save me-2"></i>
+                                    Test Kaydet
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="mt-4">
+                    <div class="alert alert-info">
+                        <i class="fas fa-info-circle me-2"></i>
+                        <strong>Test İçeriği:</strong> Bu form özellikler sistemini test etmek için hazırlanmıştır.
+                        Seçilen özellikler JSON formatında veritabanına kaydedilecektir.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

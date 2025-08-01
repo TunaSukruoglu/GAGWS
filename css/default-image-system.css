@@ -1,0 +1,109 @@
+/* Default Image System CSS */
+
+/* Default image styling */
+.property-image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+}
+
+/* Default image placeholder */
+.img-gallery img[src*="default.png"],
+.img-data img[src*="default.png"] {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    position: relative;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+/* Default image hover effect */
+.img-gallery:hover img[src*="default.png"],
+.img-data:hover img[src*="default.png"] {
+    opacity: 1;
+    transform: scale(1.02);
+}
+
+/* Loading state for images */
+.property-image-loading {
+    background: linear-gradient(45deg, #f0f0f0 25%, transparent 25%), 
+                linear-gradient(-45deg, #f0f0f0 25%, transparent 25%), 
+                linear-gradient(45deg, transparent 75%, #f0f0f0 75%), 
+                linear-gradient(-45deg, transparent 75%, #f0f0f0 75%);
+    background-size: 20px 20px;
+    background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+    animation: loading-pattern 1s linear infinite;
+}
+
+@keyframes loading-pattern {
+    0% { background-position: 0 0, 0 10px, 10px -10px, -10px 0px; }
+    100% { background-position: 20px 20px, 20px 30px, 30px 10px, 10px 20px; }
+}
+
+/* Error state for broken images */
+.property-image-error {
+    background: #f8d7da;
+    color: #721c24;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    text-align: center;
+    min-height: 200px;
+}
+
+.property-image-error::before {
+    content: "🖼️";
+    font-size: 48px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Responsive image handling */
+@media (max-width: 768px) {
+    .img-gallery img[src*="default.png"],
+    .img-data img[src*="default.png"] {
+        min-height: 180px;
+    }
+}
+
+@media (max-width: 576px) {
+    .img-gallery img[src*="default.png"],
+    .img-data img[src*="default.png"] {
+        min-height: 150px;
+    }
+}
+
+/* Enhanced default image styling */
+.default-image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(21, 185, 124, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.property-image-container:hover .default-image-overlay {
+    opacity: 1;
+}
+
+.default-image-overlay::before {
+    content: "📷";
+    font-size: 24px;
+    color: #15B97C;
+    background: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}

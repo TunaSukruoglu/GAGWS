@@ -1,0 +1,32 @@
+FTP ile Yükleme Rehberi
+========================
+
+1. FTP İstemcisi Kurulum:
+   - FileZilla (Ücretsiz): https://filezilla-project.org/
+   - WinSCP (Windows): https://winscp.net/
+   - Cyberduck (Mac): https://cyberduck.io/
+
+2. FTP Bağlantı Bilgileri:
+   Host: ftp.sitenizadı.com (hosting sağlayıcınızdan alın)
+   Kullanıcı: hosting_kullanıcı_adınız
+   Şifre: hosting_şifreniz
+   Port: 21 (FTP) veya 22 (SFTP)
+
+3. Yükleme Adımları:
+   - public_html klasörüne bağlanın
+   - Tüm dosyaları yükleyin (upload.php dahil)
+   - https://siteniz.com/upload.php adresini açın
+   - ZIP dosyasını yükleyin
+
+4. cPanel Alternatifi:
+   - cPanel → File Manager
+   - public_html klasörü
+   - Upload ile ZIP yükleme
+   - Extract ile açma
+
+5. Veritabanı Kurulumu:
+   - cPanel → phpMyAdmin
+   - Import → gokhanaydinli_db_complete.sql
+   - db.php dosyasını düzenleyin
+
+Güvenlik: Kurulum sonrası upload.php dosyasını silin!

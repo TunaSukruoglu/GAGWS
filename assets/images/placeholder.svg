@@ -1,0 +1,12 @@
+<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f8f9fa"/>
+  <rect x="10" y="10" width="280" height="180" fill="#e9ecef" stroke="#dee2e6" stroke-width="2"/>
+  <text x="150" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#6c757d">
+    Resim Bulunamadı
+  </text>
+  <text x="150" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#adb5bd">
+    Görsel yüklenemedi
+  </text>
+  <circle cx="150" cy="130" r="20" fill="#dee2e6"/>
+  <path d="M135 125 L150 140 L165 125" stroke="#6c757d" stroke-width="2" fill="none"/>
+</svg>

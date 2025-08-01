@@ -1,0 +1,215 @@
+/* Dashboard Panel Z-Index Fix */
+
+/* Ana header/navbar için yüksek z-index */
+.theme-main-menu,
+header.theme-main-menu {
+    z-index: 9999 !important;
+    position: relative !important;
+}
+
+/* Sticky menu için */
+.theme-main-menu.sticky-menu {
+    z-index: 9999 !important;
+    position: fixed !important;
+}
+
+/* Dashboard side menu için z-index düzeltmesi */
+.dashboard-sidebar,
+.dash-aside-navbar,
+.user-dashboard .dash-aside-navbar {
+    z-index: 1000 !important;
+    position: relative !important;
+}
+
+/* Dashboard ana içerik alanı */
+.dashboard-body,
+.user-dashboard .dashboard-body {
+    z-index: 100 !important;
+    position: relative !important;
+    margin-top: 0 !important;
+    padding-top: 80px !important; /* Header yüksekliği kadar boşluk */
+}
+
+/* Dashboard wrapper */
+.user-dashboard {
+    position: relative !important;
+    overflow-x: hidden !important;
+}
+
+/* Sol sidebar menü */
+.dash-aside-navbar {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    height: 100vh !important;
+    z-index: 1000 !important;
+    margin-top: 70px !important; /* Header altından başla */
+}
+
+/* Ana içerik alanını sola kaydır */
+.dashboard-body {
+    margin-left: 280px !important; /* Sidebar genişliği kadar */
+    min-height: 100vh !important;
+    padding-top: 90px !important;
+}
+
+/* Responsive düzeltmeler */
+@media (max-width: 1199px) {
+    .dashboard-body {
+        margin-left: 0 !important;
+        padding-top: 70px !important;
+    }
+    
+    .dash-aside-navbar {
+        transform: translateX(-100%) !important;
+        transition: transform 0.3s ease !important;
+    }
+    
+    .dash-aside-navbar.show {
+        transform: translateX(0) !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .dashboard-body {
+        padding-top: 60px !important;
+    }
+    
+    .dash-aside-navbar {
+        margin-top: 60px !important;
+    }
+}
+
+/* Header fix - tüm elementlerin üstünde */
+.theme-main-menu .inner-content {
+    z-index: 10000 !important;
+    position: relative !important;
+}
+
+.theme-main-menu .top-header {
+    z-index: 10000 !important;
+    position: relative !important;
+}
+
+/* Modal ve dropdown'lar için */
+.modal {
+    z-index: 10500 !important;
+}
+
+.dropdown-menu {
+    z-index: 10100 !important;
+}
+
+/* Overlay/backdrop */
+.modal-backdrop {
+    z-index: 10400 !important;
+}
+
+/* Dashboard specific navbar styling */
+.user-dashboard .theme-main-menu {
+    background: #fff !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1) !important;
+    border-bottom: 1px solid #e9ecef !important;
+}
+
+/* Sidebar toggle button */
+.sidebar-toggle {
+    display: none !important;
+    z-index: 10001 !important;
+}
+
+@media (max-width: 1199px) {
+    .sidebar-toggle {
+        display: block !important;
+        position: fixed !important;
+        top: 15px !important;
+        left: 15px !important;
+        z-index: 10001 !important;
+        background: #fff !important;
+        border: 1px solid #ddd !important;
+        border-radius: 5px !important;
+        padding: 8px 12px !important;
+        cursor: pointer !important;
+    }
+}
+
+/* Dashboard content padding düzeltmesi */
+.dashboard-body .bg-white {
+    margin-top: 0 !important;
+}
+
+/* Dashboard ana başlık */
+.dashboard-body h2,
+.dashboard-body .main-title {
+    margin-top: 20px !important;
+}
+
+/* Preloader z-index */
+#preloader {
+    z-index: 99999 !important;
+}
+
+/* Dashboard table responsive */
+.dashboard-body .table-responsive {
+    overflow-x: auto !important;
+}
+
+/* Profile dropdown z-index */
+.profile-dropdown {
+    z-index: 10050 !important;
+}
+
+/* Notification dropdown */
+.notification-dropdown {
+    z-index: 10050 !important;
+}
+
+/* Dashboard mobile menu overlay */
+.dashboard-mobile-overlay {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background: rgba(0,0,0,0.5) !important;
+    z-index: 999 !important;
+    display: none !important;
+}
+
+.dashboard-mobile-overlay.show {
+    display: block !important;
+}
+
+/* Dashboard sidebar items */
+.dash-aside-navbar .nav-link {
+    z-index: 1001 !important;
+    position: relative !important;
+}
+
+/* Dashboard content scroll fix */
+.dashboard-body {
+    overflow-y: auto !important;
+    max-height: calc(100vh - 70px) !important;
+}
+
+/* Footer z-index */
+.footer-four {
+    z-index: 50 !important;
+    position: relative !important;
+}
+
+/* Alert ve toast mesajları için */
+.alert,
+.toast {
+    z-index: 10200 !important;
+}
+
+/* Tooltip z-index */
+.tooltip {
+    z-index: 10300 !important;
+}
+
+/* Popover z-index */
+.popover {
+    z-index: 10250 !important;
+}

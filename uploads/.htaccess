@@ -1,0 +1,12 @@
+Options +Indexes
+RewriteEngine On
+
+# Resim dosyalarına erişim izni ver
+<FilesMatch "\.(jpg|jpeg|png|gif|bmp|webp)$">
+    Require all granted
+</FilesMatch>
+
+# PHP dosyalarının çalıştırılmasını engelle
+<FilesMatch "\.php$">
+    Require all denied
+</FilesMatch>

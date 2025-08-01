@@ -1,0 +1,36 @@
+/* Test CSS - Admin Properties Animation Fix */
+.property-card {
+    transition: none !important;
+    transform: none !important;
+}
+
+.property-card:hover {
+    transform: none !important;
+}
+
+.property-image img {
+    transition: none !important;
+    transform: none !important;
+}
+
+.property-card:hover .property-image img {
+    transform: none !important;
+}
+
+.stats-card {
+    transition: box-shadow 0.3s ease;
+    transform: none !important;
+}
+
+.stats-card:hover {
+    transform: none !important;
+}
+
+/* Sadece gölge efekti kalsın */
+.property-card:hover {
+    box-shadow: 0 10px 40px rgba(0,0,0,0.12);
+}
+
+.stats-card:hover {
+    box-shadow: 0 10px 40px rgba(0,0,0,0.12);
+}

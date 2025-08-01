@@ -1,0 +1,44 @@
+# Ziyaret logları
+# Format: Tarih | IP Adresi | User Agent
+2025-07-26 14:36:05 | 127.0.0.1 | Mozilla/5.0 (Test Browser)
+2025-07-26 11:39:41 | 127.0.0.1 | Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Sa
+2025-07-26 12:39:20 | 127.0.0.1 | Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Sa
+2025-07-26 13:51:05 | 127.0.0.1 | Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Sa
+2025-07-26 14:56:14 | ::1 | unknown
+2025-07-27 06:18:21 | 127.0.0.1 | Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)
+2025-07-27 06:51:22 | 127.0.0.1 | Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Sa
+2025-07-27 08:44:29 | 127.0.0.1 | Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Ve
+2025-07-27 10:56:59 | 127.0.0.1 | Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Sa
+2025-07-27 14:52:08 | 192.168.68.67 | Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.102.2 Chrome
+2025-07-28 10:19:39 | 127.0.0.1 | Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Sa
+2025-07-28 11:50:19 | 85.98.71.54 | Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Sa
+2025-07-28 12:03:49 | 51.210.242.29 | Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com
+2025-07-28 12:04:29 | 156.228.179.182 | Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Sa
+2025-07-28 12:08:28 | 93.159.230.85 | Mozilla/5.0 (Linux; arm_64; Android 12; CPH2205) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0
+2025-07-28 12:13:05 | 66.249.70.198 | Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chr
+2025-07-28 12:14:52 | 66.249.70.196 | Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+2025-07-28 12:14:53 | 66.249.70.196 | Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chr
+2025-07-28 12:14:53 | 66.249.70.197 | Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+2025-07-28 12:14:55 | 66.249.70.198 | Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chr
+2025-07-28 12:20:46 | 103.4.250.148 | Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.
+2025-07-28 12:20:46 | 104.164.173.31 | Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Sa
+2025-07-28 12:20:52 | 103.4.250.148 | Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.
+2025-07-28 13:01:57 | 66.249.70.196 | Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chr
+2025-07-28 13:24:19 | 14.215.163.132 | Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Ve
+2025-07-28 14:34:04 | 43.135.211.148 | Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Ve
+2025-07-28 14:37:40 | 104.252.191.184 | Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.3
+2025-07-28 14:37:41 | 104.164.173.21 | Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.3
+2025-07-28 14:37:44 | 104.164.173.21 | Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.3
+2025-07-28 14:38:34 | 170.106.179.68 | Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Ve
+2025-07-28 14:48:31 | 156.253.179.80 | Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Sa
+2025-07-28 17:49:21 | 91.84.109.110 | Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.
+2025-07-28 17:49:27 | 189.135.235.103 | Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.
+2025-07-28 17:49:30 | 189.135.235.103 | Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Sa
+2025-07-28 18:01:05 | 34.61.220.255 | Mozilla/5.0 (compatible; CMS-Checker/1.0; +https://example.com)
+2025-07-28 18:14:44 | 159.65.160.14 | Mozilla/5.0 (X11; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0
+2025-07-28 18:36:18 | 198.235.24.138 | unknown
+2025-07-28 19:15:20 | 35.198.244.56 | Mozilla/5.0 (Linux; Android 5.1.1; SM-J111F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683
+2025-07-28 19:45:07 | 85.98.71.54 | Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Sa
+2025-07-28 19:47:53 | 101.42.117.179 | Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Ve
+2025-07-29 06:15:49 | 85.98.71.54 | Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Sa
+2025-07-29 06:16:13 | 85.98.71.54 | Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.102.2 Chrome

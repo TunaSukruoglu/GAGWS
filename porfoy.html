@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gökhan Aydınlı - Gayrimenkul Portföyü</title>
+    <meta name="description" content="Gökhan Aydınlı Gayrimenkul Danışmanlığı - Portföy sayfamız yakında yayında!">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .main-container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .content-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 60px 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .logo-section {
+            margin-bottom: 40px;
+        }
+        
+        .logo {
+            width: 200px;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+        
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        
+        .main-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .subtitle {
+            font-size: 1.3rem;
+            color: #6c757d;
+            margin-bottom: 40px;
+            font-weight: 300;
+        }
+        
+        .coming-soon {
+            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 40px;
+            display: inline-block;
+            box-shadow: 0 8px 25px rgba(40, 167, 69, 0.3);
+            animation: pulse 2s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        .description {
+            font-size: 1.1rem;
+            color: #495057;
+            line-height: 1.8;
+            margin-bottom: 40px;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+        
+        .btn-custom {
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: none;
+            font-size: 1rem;
+        }
+        
+        .btn-primary-custom {
+            background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+            color: white;
+            box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+        }
+        
+        .btn-primary-custom:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 123, 255, 0.4);
+            color: white;
+        }
+        
+        .btn-outline-custom {
+            background: transparent;
+            color: #6c757d;
+            border: 2px solid #dee2e6;
+        }
+        
+        .btn-outline-custom:hover {
+            background: #f8f9fa;
+            color: #495057;
+            transform: translateY(-2px);
+        }
+        
+        .contact-info {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 2px solid #dee2e6;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            margin-bottom: 15px;
+            font-size: 1rem;
+            color: #495057;
+            text-align: center;
+        }
+        
+        .contact-item i {
+            margin-right: 12px;
+            margin-top: 2px;
+            width: 25px;
+            text-align: center;
+            color: #667eea;
+            flex-shrink: 0;
+        }
+        
+        .social-links {
+            margin-top: 30px;
+        }
+        
+        .social-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin: 0 8px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 20px;
+        }
+        
+        .social-link.whatsapp {
+            background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+            color: white;
+        }
+        
+        .social-link.phone {
+            background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+            color: white;
+        }
+        
+        .social-link.email {
+            background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+            color: white;
+        }
+        
+        .social-link:hover {
+            transform: translateY(-3px) scale(1.1);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            color: white;
+        }
+        
+        .countdown {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+        
+        .countdown-text {
+            font-size: 0.9rem;
+            color: #6c757d;
+            margin-bottom: 10px;
+        }
+        
+        .progress {
+            height: 8px;
+            background: rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .progress-bar {
+            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+            border-radius: 10px;
+            animation: progressAnimation 3s ease-in-out infinite;
+        }
+        
+        @keyframes progressAnimation {
+            0%, 100% { width: 75%; }
+            50% { width: 85%; }
+        }
+        
+        @media (max-width: 768px) {
+            .content-card {
+                padding: 40px 25px;
+                margin: 10px;
+            }
+            
+            .logo {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .main-title {
+                font-size: 2rem;
+            }
+            
+            .subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn-custom {
+                width: 100%;
+                max-width: 250px;
+            }
+        }
+    </style>
+    
+    <!-- Auto redirect after 5 seconds -->
+    <script>
+        // 5 saniye sonra ana sayfaya yönlendir (isteğe bağlı)
+        // setTimeout(() => {
+        //     window.location.href = 'https://gokhanaydinli.sahibinden.com/';
+        // }, 5000);
+    </script>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="content-card">
+            <!-- Logo Section -->
+            <div class="logo-section">
+                <div class="logo">
+                    <img src="images/logoSiyah.png" alt="Gökhan Aydınlı Logo" />
+                </div>
+                <h1 class="main-title">Gökhan Aydınlı</h1>
+                <p class="subtitle">Gayrimenkul Danışmanlığı</p>
+            </div>
+            
+            <!-- Coming Soon Badge -->
+            <div class="coming-soon">
+                <i class="fas fa-rocket me-2"></i>
+                Portföy Sayfamız Yakında!
+            </div>
+            
+            <!-- Description -->
+            <div class="description">
+                <p>
+                    <strong>Portföy sayfamız</strong> şu anda geliştirme aşamasında. 
+                    En güncel gayrimenkul ilanlarımızı ve özel projelerimizi sizlerle paylaşmak için 
+                    çalışmalarımız devam ediyor.
+                </p>
+                <p>
+                    Bu süreçte <strong>sahibinden.com</strong> üzerindeki mevcut ilanlarımızı 
+                    inceleyebilir veya benimle doğrudan iletişime geçebilirsiniz.
+                </p>
+            </div>
+            
+            <!-- CTA Buttons -->
+            <div class="cta-buttons">
+                <a href="https://gokhanaydinli.sahibinden.com/" class="btn-custom btn-primary-custom" target="_blank">
+                    <i class="fas fa-home me-2"></i>
+                    Sahibinden İlanlarım
+                </a>
+                <a href="tel:+905302037083" class="btn-custom btn-outline-custom">
+                    <i class="fas fa-phone me-2"></i>
+                    Hemen Ara
+                </a>
+            </div>
+            
+            <!-- Progress Bar -->
+            <div class="countdown">
+                <div class="countdown-text">
+                    <i class="fas fa-tools me-2"></i>
+                    Geliştirme İlerlemesi
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar"></div>
+                </div>
+            </div>
+            
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+90 (530) 203 70 83</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>info@gokhanaydinli.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Maltepe Mah. Eski Çırpıcı Yolu Parima Ofis No:8 K:10 D:126 Cevizlibağ / İstanbul</span>
+                </div>
+                
+                <!-- Social Links -->
+                <div class="social-links">
+                    <a href="https://wa.me/905302037083" class="social-link whatsapp" target="_blank" title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="tel:+905302037083" class="social-link phone" title="Telefon">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                    <a href="mailto:info@gokhanaydinli.com" class="social-link email" title="E-posta">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

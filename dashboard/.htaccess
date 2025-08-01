@@ -1,0 +1,9 @@
+# Simple access control
+Options -Indexes
+DirectoryIndex dashboard.php index.php index.html
+
+# Headers for timeout prevention
+<IfModule mod_headers.c>
+    Header set Connection "keep-alive"
+    Header set Keep-Alive "timeout=600, max=1000"
+</IfModule>

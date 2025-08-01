@@ -1,0 +1,169 @@
+.fancybox__container {
+  --fancybox-color: #0d0c22;
+  --fancybox-bg: #fff;
+  --fancybox-slide-gap: 1rem;
+  --fancybox-thumbs-width: 100px;
+  --fancybox-thumbs-ratio: 16 / 9;
+  --fancybox-accent-color: #00787a;
+  --fancybox-controlbar-height: 44px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: 1000;
+  outline: none;
+  transform-origin: top left;
+  --carousel-button-width: 48px;
+  --carousel-button-height: 48px;
+  --carousel-button-svg-width: 24px;
+  --carousel-button-svg-height: 24px;
+  --carousel-button-svg-stroke-width: 2.5;
+}
+
+.fancybox__backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--fancybox-bg);
+  z-index: -1;
+}
+
+.fancybox__carousel {
+  position: relative;
+  flex: 1 1 auto;
+  min-height: 0;
+  height: 100%;
+  z-index: 10;
+}
+
+.fancybox__carousel .carousel__track {
+  display: flex;
+  height: 100%;
+}
+
+.fancybox__carousel .carousel__slide {
+  display: flex;
+  position: relative;
+  padding: 2rem;
+  flex: 0 0 auto;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.is-draggable {
+  cursor: move;
+  cursor: grab;
+}
+
+.is-dragging {
+  cursor: grabbing;
+}
+
+.fancybox__slide {
+  display: flex;
+  flex-direction: column;
+  outline: none;
+  padding: var(--fancybox-slide-gap) var(--fancybox-slide-gap) calc(var(--fancybox-slide-gap) + var(--fancybox-controlbar-height)) var(--fancybox-slide-gap);
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  --carousel-button-width: 44px;
+  --carousel-button-height: 44px;
+}
+
+.fancybox__slide .fancybox__content {
+  margin: auto;
+  padding: 0;
+  z-index: 30;
+  max-width: calc(100% - 2 * var(--fancybox-slide-gap));
+  max-height: calc(100% - 2 * var(--fancybox-slide-gap));
+  display: flex;
+  flex-direction: column;
+}
+
+.fancybox__slide img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transform-origin: center center;
+  transition: transform .3s ease;
+}
+
+.fancybox__slide img.fancybox__image--ready {
+  transform: scale(1);
+}
+
+.fancybox__caption {
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 14px;
+  transition: opacity .3s ease;
+}
+
+.fancybox__nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fancybox__carousel .carousel__button.is-prev,
+.fancybox__carousel .carousel__button.is-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  color: #fff;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background .3s ease;
+}
+
+.fancybox__carousel .carousel__button.is-prev {
+  left: 20px;
+}
+
+.fancybox__carousel .carousel__button.is-next {
+  right: 20px;
+}
+
+.fancybox__carousel .carousel__button.is-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 40;
+}
+
+.fancybox__carousel .carousel__button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}

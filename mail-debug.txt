@@ -1,0 +1,294 @@
+Mail gönderim denemesi: 2025-07-28 12:05:11 | Delila Head | head.delila@gmail.com | No Sales From AI? Your Content Gets Ignored?
+2025-07-28 12:05:12 DEBUG: SERVER -> CLIENT: 220-cp24.hosting.sh.com.tr ESMTP Exim 4.98.2 #2 Mon, 28 Jul 2025 15:05:11 +0300 
+220-We do not authorize the use of this system to transport unsolicited, 
+220 and/or bulk e-mail.
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER: EHLO www.webuzmani.dev
+
+2025-07-28 12:05:12 DEBUG: SERVER -> CLIENT: 250-cp24.hosting.sh.com.tr Hello ss.senersukruoglu.com [152.53.126.180]
+250-SIZE 52428800
+250-LIMITS MAILMAX=1000 RCPTMAX=50000
+250-8BITMIME
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH PLAIN LOGIN
+250 HELP
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER: AUTH LOGIN
+
+2025-07-28 12:05:12 DEBUG: SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER: [credentials hidden]
+2025-07-28 12:05:12 DEBUG: SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER: [credentials hidden]
+2025-07-28 12:05:12 DEBUG: SERVER -> CLIENT: 235 Authentication succeeded
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER: MAIL FROM:<root@gokhanaydinli.com>
+
+2025-07-28 12:05:12 DEBUG: SERVER -> CLIENT: 250 OK
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER: RCPT TO:<sukru.sukruoglu@gmail.com>
+
+2025-07-28 12:05:12 DEBUG: SERVER -> CLIENT: 250 Accepted
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER: DATA
+
+2025-07-28 12:05:12 DEBUG: SERVER -> CLIENT: 354 Enter message, ending with "." on a line by itself
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER: Date: Mon, 28 Jul 2025 12:05:11 +0000
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER: To: sukru.sukruoglu@gmail.com
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER: From: =?UTF-8?Q?G=C3=B6khan_Ayd=C4=B1nl=C4=B1_Website?= <root@gokhanaydinli.com>
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER: Reply-To: Delila Head <head.delila@gmail.com>
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER: Subject: =?UTF-8?Q?=C4=B0leti=C5=9Fim_Formu:_No_Sales_From_AI=3F_Your_Content_Gets_Ignored=3F?=
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER: Message-ID: <V4A0cc5g5SecOro5X60blovtx0XeLQmECb1J5zYFeL4@www.webuzmani.dev>
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER: X-Mailer: PHPMailer 6.10.0 (https://github.com/PHPMailer/PHPMailer)
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER: MIME-Version: 1.0
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER: Content-Type: text/html; charset=UTF-8
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER: 
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER: 
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER:         <div style='font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; background: #f8f9fa; border-radius: 10px;'>
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER:             <div style='background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);'>
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER:                 <h2 style='color: #2563eb; margin-bottom: 20px; text-align: center;'>İletişim Formu Mesajı</h2>
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER:                 
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER:                 <div style='background: #f8f9fa; padding: 20px; border-radius: 8px; margin-bottom: 20px;'>
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER:                     <p style='margin: 10px 0;'><strong>👤 Ad Soyad:</strong> Delila Head</p>
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER:                     <p style='margin: 10px 0;'><strong>📧 E-posta:</strong> head.delila@gmail.com</p>
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER:                     <p style='margin: 10px 0;'><strong>📋 Konu:</strong> No Sales From AI? Your Content Gets Ignored?</p>
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER:                     <p style='margin: 10px 0;'><strong>📅 Tarih:</strong> 28.07.2025 12:05</p>
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER:                 </div>
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER:                 
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER:                 <div style='background: white; border-left: 4px solid #2563eb; padding: 20px; margin: 20px 0;'>
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER:                     <h3 style='color: #1f2937; margin-bottom: 15px;'>💬 Mesaj:</h3>
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER:                     <p style='line-height: 1.6; color: #374151;'>Hello,<br />
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER: <br />
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER: We have a promotional offer for your website webuzmani.dev.<br />
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER: <br />
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER: AI Affiliate Goldmine is a completely beginner-friendly system that shows you how to use AI to create content, get organic traffic, build your email list, and earn affiliate commissions, even if you are starting from scratch.<br />
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER: <br />
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER: - You&#039;re not wasting hours trying to figure out AI tools.<br />
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER: <br />
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER: - You&#039;re not guessing what to post or write each day<br />
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER: <br />
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER: - You&#039;re not struggling to grow your business.<br />
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER: <br />
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER: <br />
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER: See it in action: https://www.novaai.expert/AIAffiliateGoldmine<br />
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER: <br />
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER: You are receiving this message because we believe our offer may be relevant to you. <br />
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER: If you do not wish to receive further communications from us, please click here to UNSUBSCRIBE:<br />
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER: https://www.novaai.expert/unsubscribe?domain=webuzmani.dev<br />
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER: Address: 209 West Street Comstock Park, MI 49321<br />
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER: Looking out for you, Ethan Parker</p>
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER:                 </div>
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER:                 
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER:                 <div style='text-align: center; padding-top: 20px; border-top: 1px solid #e5e7eb; color: #6b7280; font-size: 14px;'>
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER:                     Bu mesaj gokhanaydinli.com iletişim formu üzerinden gönderilmiştir.
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER:                 </div>
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER:             </div>
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER:         </div>
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER: 
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER: .
+
+2025-07-28 12:05:12 DEBUG: SERVER -> CLIENT: 250 OK id=1ugMbQ-00000000Xk1-0JUJ
+
+2025-07-28 12:05:12 DEBUG: CLIENT -> SERVER: QUIT
+
+2025-07-28 12:05:12 DEBUG: SERVER -> CLIENT: 221 cp24.hosting.sh.com.tr closing connection
+
+PHPMailer SMTP sonucu: BAŞARILI
+Mail gönderim denemesi: 2025-07-28 14:48:39 | Noelia Stace | noelia.stace@gmail.com | No skills - Just profit
+2025-07-28 14:48:39 DEBUG: SERVER -> CLIENT: 220-cp24.hosting.sh.com.tr ESMTP Exim 4.98.2 #2 Mon, 28 Jul 2025 17:48:38 +0300 
+220-We do not authorize the use of this system to transport unsolicited, 
+220 and/or bulk e-mail.
+
+2025-07-28 14:48:39 DEBUG: CLIENT -> SERVER: EHLO www.webuzmani.dev
+
+2025-07-28 14:48:39 DEBUG: SERVER -> CLIENT: 250-cp24.hosting.sh.com.tr Hello ss.senersukruoglu.com [152.53.126.180]
+250-SIZE 52428800
+250-LIMITS MAILMAX=1000 RCPTMAX=50000
+250-8BITMIME
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH PLAIN LOGIN
+250 HELP
+
+2025-07-28 14:48:39 DEBUG: CLIENT -> SERVER: AUTH LOGIN
+
+2025-07-28 14:48:39 DEBUG: SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+2025-07-28 14:48:39 DEBUG: CLIENT -> SERVER: [credentials hidden]
+2025-07-28 14:48:39 DEBUG: SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+2025-07-28 14:48:39 DEBUG: CLIENT -> SERVER: [credentials hidden]
+2025-07-28 14:48:39 DEBUG: SERVER -> CLIENT: 235 Authentication succeeded
+
+2025-07-28 14:48:39 DEBUG: CLIENT -> SERVER: MAIL FROM:<root@gokhanaydinli.com>
+
+2025-07-28 14:48:39 DEBUG: SERVER -> CLIENT: 250 OK
+
+2025-07-28 14:48:39 DEBUG: CLIENT -> SERVER: RCPT TO:<sukru.sukruoglu@gmail.com>
+
+2025-07-28 14:48:40 DEBUG: SERVER -> CLIENT: 250 Accepted
+
+2025-07-28 14:48:40 DEBUG: CLIENT -> SERVER: DATA
+
+2025-07-28 14:48:40 DEBUG: SERVER -> CLIENT: 354 Enter message, ending with "." on a line by itself
+
+2025-07-28 14:48:40 DEBUG: CLIENT -> SERVER: Date: Mon, 28 Jul 2025 14:48:39 +0000
+
+2025-07-28 14:48:40 DEBUG: CLIENT -> SERVER: To: sukru.sukruoglu@gmail.com
+
+2025-07-28 14:48:40 DEBUG: CLIENT -> SERVER: From: =?UTF-8?Q?G=C3=B6khan_Ayd=C4=B1nl=C4=B1_Website?= <root@gokhanaydinli.com>
+
+2025-07-28 14:48:40 DEBUG: CLIENT -> SERVER: Reply-To: Noelia Stace <noelia.stace@gmail.com>
+
+2025-07-28 14:48:40 DEBUG: CLIENT -> SERVER: Subject: =?UTF-8?Q?=C4=B0leti=C5=9Fim_Formu:_No_skills_-_Just_profit?=
+
+2025-07-28 14:48:40 DEBUG: CLIENT -> SERVER: Message-ID: <bGL2FGKIUldm4MGzDMQ4BePVxvORB9uiQRF1iMHk@www.webuzmani.dev>
+
+2025-07-28 14:48:40 DEBUG: CLIENT -> SERVER: X-Mailer: PHPMailer 6.10.0 (https://github.com/PHPMailer/PHPMailer)
+
+2025-07-28 14:48:40 DEBUG: CLIENT -> SERVER: MIME-Version: 1.0
+
+2025-07-28 14:48:40 DEBUG: CLIENT -> SERVER: Content-Type: text/html; charset=UTF-8
+
+2025-07-28 14:48:40 DEBUG: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2025-07-28 14:48:40 DEBUG: CLIENT -> SERVER: 
+
+2025-07-28 14:48:40 DEBUG: CLIENT -> SERVER: 
+
+2025-07-28 14:48:40 DEBUG: CLIENT -> SERVER:         <div style='font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; background: #f8f9fa; border-radius: 10px;'>
+
+2025-07-28 14:48:40 DEBUG: CLIENT -> SERVER:             <div style='background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);'>
+
+2025-07-28 14:48:40 DEBUG: CLIENT -> SERVER:                 <h2 style='color: #2563eb; margin-bottom: 20px; text-align: center;'>İletişim Formu Mesajı</h2>
+
+2025-07-28 14:48:40 DEBUG: CLIENT -> SERVER:                 
+
+2025-07-28 14:48:40 DEBUG: CLIENT -> SERVER:                 <div style='background: #f8f9fa; padding: 20px; border-radius: 8px; margin-bottom: 20px;'>
+
+2025-07-28 14:48:40 DEBUG: CLIENT -> SERVER:                     <p style='margin: 10px 0;'><strong>👤 Ad Soyad:</strong> Noelia Stace</p>
+
+2025-07-28 14:48:40 DEBUG: CLIENT -> SERVER:                     <p style='margin: 10px 0;'><strong>📧 E-posta:</strong> noelia.stace@gmail.com</p>
+
+2025-07-28 14:48:40 DEBUG: CLIENT -> SERVER:                     <p style='margin: 10px 0;'><strong>📋 Konu:</strong> No skills - Just profit</p>
+
+2025-07-28 14:48:40 DEBUG: CLIENT -> SERVER:                     <p style='margin: 10px 0;'><strong>📅 Tarih:</strong> 28.07.2025 14:48</p>
+
+2025-07-28 14:48:40 DEBUG: CLIENT -> SERVER:                 </div>
+
+2025-07-28 14:48:40 DEBUG: CLIENT -> SERVER:                 
+
+2025-07-28 14:48:40 DEBUG: CLIENT -> SERVER:                 <div style='background: white; border-left: 4px solid #2563eb; padding: 20px; margin: 20px 0;'>
+
+2025-07-28 14:48:40 DEBUG: CLIENT -> SERVER:                     <h3 style='color: #1f2937; margin-bottom: 15px;'>💬 Mesaj:</h3>
+
+2025-07-28 14:48:40 DEBUG: CLIENT -> SERVER:                     <p style='line-height: 1.6; color: #374151;'>Hello,<br />
+
+2025-07-28 14:48:40 DEBUG: CLIENT -> SERVER: <br />
+
+2025-07-28 14:48:40 DEBUG: CLIENT -> SERVER: We have a promotional offer for your website webuzmani.dev.<br />
+
+2025-07-28 14:48:40 DEBUG: CLIENT -> SERVER: <br />
+
+2025-07-28 14:48:40 DEBUG: CLIENT -> SERVER: What if one tool could turn any image into a ready to sell mosaic style Color By Number page without design skills?<br />
+
+2025-07-28 14:48:40 DEBUG: CLIENT -> SERVER: With Color By Number Profit Machine, get the tool, the training, and the templates to launch a beautiful mosaic style color by number page faster than ever.<br />
+
+2025-07-28 14:48:40 DEBUG: CLIENT -> SERVER: <br />
+
+2025-07-28 14:48:40 DEBUG: CLIENT -> SERVER: See it in action: https://goldsolutions.pro/ColorByNumber<br />
+
+2025-07-28 14:48:40 DEBUG: CLIENT -> SERVER: <br />
+
+2025-07-28 14:48:40 DEBUG: CLIENT -> SERVER: You are receiving this message because we believe our offer may be relevant to you. <br />
+
+2025-07-28 14:48:40 DEBUG: CLIENT -> SERVER: If you do not wish to receive further communications from us, please click here to UNSUBSCRIBE:<br />
+
+2025-07-28 14:48:40 DEBUG: CLIENT -> SERVER: https://goldsolutions.pro/unsubscribe?domain=webuzmani.dev<br />
+
+2025-07-28 14:48:40 DEBUG: CLIENT -> SERVER: Address: 209 West Street Comstock Park, MI 49321<br />
+
+2025-07-28 14:48:40 DEBUG: CLIENT -> SERVER: Looking out for you, Ethan Parker</p>
+
+2025-07-28 14:48:40 DEBUG: CLIENT -> SERVER:                 </div>
+
+2025-07-28 14:48:40 DEBUG: CLIENT -> SERVER:                 
+
+2025-07-28 14:48:40 DEBUG: CLIENT -> SERVER:                 <div style='text-align: center; padding-top: 20px; border-top: 1px solid #e5e7eb; color: #6b7280; font-size: 14px;'>
+
+2025-07-28 14:48:40 DEBUG: CLIENT -> SERVER:                     Bu mesaj gokhanaydinli.com iletişim formu üzerinden gönderilmiştir.
+
+2025-07-28 14:48:40 DEBUG: CLIENT -> SERVER:                 </div>
+
+2025-07-28 14:48:40 DEBUG: CLIENT -> SERVER:             </div>
+
+2025-07-28 14:48:40 DEBUG: CLIENT -> SERVER:         </div>
+
+2025-07-28 14:48:40 DEBUG: CLIENT -> SERVER: 
+
+2025-07-28 14:48:40 DEBUG: CLIENT -> SERVER: .
+
+2025-07-28 14:48:40 DEBUG: SERVER -> CLIENT: 250 OK id=1ugP9b-00000001gMD-1Mac
+
+2025-07-28 14:48:40 DEBUG: CLIENT -> SERVER: QUIT
+
+2025-07-28 14:48:40 DEBUG: SERVER -> CLIENT: 221 cp24.hosting.sh.com.tr closing connection
+
+PHPMailer SMTP sonucu: BAŞARILI

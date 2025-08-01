@@ -1,0 +1,18 @@
+# SUPER EMERGENCY MAXIMUM CACHE BUSTING - NUCLEAR OPTION
+<FilesMatch "\.(js)$">
+    Header always set Cache-Control "no-cache, no-store, must-revalidate, max-age=0, s-maxage=0"
+    Header always set Pragma "no-cache"
+    Header always set Expires "Thu, 01 Jan 1970 00:00:00 GMT"
+    Header always unset ETag
+    Header always unset Last-Modified
+    FileETag None
+</FilesMatch>
+
+# SUPER AGGRESSIVE: Force immediate cache expiry for specific files
+<FilesMatch "(add-property|property-wizard|photo-upload|location-manager|cloudflare-images|form-handlers)\.js$">
+    Header always set Cache-Control "no-cache, no-store, must-revalidate, max-age=0, s-maxage=0, proxy-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires "Thu, 01 Jan 1970 00:00:00 GMT"
+    Header unset ETag
+    FileETag None
+</FilesMatch>

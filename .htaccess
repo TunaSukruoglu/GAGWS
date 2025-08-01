@@ -1,0 +1,9 @@
+# Basic Configuration
+DirectoryIndex index.php index.html
+Options -Indexes
+
+# Security
+<Files "*.log">
+    Order allow,deny
+    Deny from all
+</Files>

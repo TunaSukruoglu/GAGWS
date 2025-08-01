@@ -1,0 +1,17 @@
+[
+    {"value": "Daire", "label": "🏠 Daire"},
+    {"value": "Villa", "label": "🏡 Villa"},
+    {"value": "Müstakil Ev", "label": "🏘️ Müstakil Ev"},
+    {"value": "Apart", "label": "🏢 Apart"},
+    {"value": "Ofis", "label": "🏢 Ofis"},
+    {"value": "Dükkan", "label": "🏪 Dükkan"},
+    {"value": "Mağaza", "label": "🛍️ Mağaza"},
+    {"value": "Depo", "label": "📦 Depo"},
+    {"value": "Fabrika", "label": "🏭 Fabrika"},
+    {"value": "Arsa", "label": "🌾 Arsa"},
+    {"value": "Tarla", "label": "🌱 Tarla"},
+    {"value": "Bağ-Bahçe", "label": "🍇 Bağ-Bahçe"},
+    {"value": "Kooperatif", "label": "🤝 Kooperatif"},
+    {"value": "Residence", "label": "🏨 Residence"},
+    {"value": "Studio", "label": "🎨 Studio"}
+]
